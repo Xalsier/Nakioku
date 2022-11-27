@@ -11,6 +11,7 @@ Home Page
 
 - Create a header that allows visitors to access other pages
 - Below the header have a box linking visitors to new content in a different page, include some text at the bottom stating when the content was added
+- If the content is in a different page, bring the visitor to that page (unless it's a video)
 - Something something Current Status, Calendar
 
 Music Page
