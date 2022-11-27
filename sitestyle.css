@@ -7,7 +7,6 @@ body {
 h1 {
          color: white;
          text-align: center;
-         border-bottom: 3px dashed #bbb;
       }
 
 p {
@@ -16,6 +15,5 @@ p {
 
 footer {
          color: white;
-         border-top: 3px dashed #bbb;
          padding: 2px;
       }
