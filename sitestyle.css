@@ -1,8 +1,14 @@
 body {
-         background-color: rgb(0,0,0);
+         background-color: black;
       }
 
 h1 {
-         color: rgb(255,255,255);
+         color: white;
+         text-align; center;
       }
 
+footer {
+         color: white;
+         border-top: 3px dashed #bbb;
+         padding: 2px;
+      }
