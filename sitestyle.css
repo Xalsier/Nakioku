@@ -5,6 +5,14 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+.spin {
+         animation-name: spinning;
+         animation-duration: 6s;
+         animation-iteration-count: infinite;
+         /* linear | ease | ease-in | ease-out | ease-in-out */
+         animation-timing-function: linear;
+}
+
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #878787, 0 0 40px #878787, 0 0 50px #878787, 0 0 60px #878787, 0 0 70px #878787;
@@ -19,24 +27,17 @@
          from { transform: rotate(0deg) }
          to { transform: rotate(360deg) }
    }
-      .spin {
-         animation-name: spinning;
-         animation-duration: 6s;
-         animation-iteration-count: infinite;
-         /* linear | ease | ease-in | ease-out | ease-in-out */
-         animation-timing-function: linear;
-   }
 
 body {
          background-image: url('Assets/Noise.png');
          background-repeat: repeat;
+         font-family: Arial, Helvetica, sans-serif;
          
       }
 
 h1 {
          color: white;
          text-align: center;
-         class="glow";
       }
 
 p {
