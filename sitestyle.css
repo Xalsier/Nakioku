@@ -1,3 +1,9 @@
+.explore {
+  border: 5px inset black;
+  background-color: grey; 
+  text-align: center;
+}
+
 .glow {
   font-size: 50px;
   color: #fff;
@@ -27,6 +33,8 @@
          from { transform: rotate(0deg) }
          to { transform: rotate(360deg) }
    }
+
+div
 
 body {
          background-image: url('Assets/Noise.png');
