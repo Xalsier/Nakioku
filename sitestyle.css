@@ -34,8 +34,6 @@
          to { transform: rotate(360deg) }
    }
 
-div
-
 body {
          background-image: url('Assets/Noise.png');
          background-repeat: repeat;
