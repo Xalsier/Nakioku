@@ -32,6 +32,10 @@
   text-align: center;
 }
   
+nav ul li a.active {
+    color: dark-gray;
+    text-decoration: underline;
+}
 
 
 .spin {
