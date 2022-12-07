@@ -22,6 +22,7 @@ imageContainer.addEventListener('click', () => {
     secondImage.style.left = '0';
     secondImage.style.width = '100%';
     secondImage.style.height = '100%';
+    secondImage.class = "spin";
     imageContainer.appendChild(secondImage);
     audio.style.display = 'block';
     isPlaying = true;
