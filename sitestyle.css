@@ -1,11 +1,11 @@
-.image-container {
+#image-container {
   position: relative;
   width: 200px;
   height: 200px;
   overflow: hidden;
 }
 
-.first-image, .second-image {
+#first-image, .second-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
   transition: transform 1s;
 }
 
-.second-image {
+#second-image {
   transform: rotate(360deg);
 }
 
