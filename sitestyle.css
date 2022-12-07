@@ -51,21 +51,32 @@ p {
          color: white;
       }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}  
-
-li {
-  text-align: center;
-  display: inline-block;
-  padding: 8px;
-  background-color: #dddddd;
-}
-
 footer {
          color: white;
          padding: 2px;
       }
+
+nav {
+    background-color: #333;
+    color: white;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+nav a:hover {
+    text-decoration: underline;
+  }
