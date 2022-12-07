@@ -6,22 +6,6 @@
    <meta name="author" content="Xalsier Kitsune">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="sitestyle.css">
-   <script>
-    function onImageClick() {
-      var image = document.getElementById("my-image");
-      var audio = document.getElementById("my-audio");
-
-      if (image.src === "Assets/Unknown_Disc_1.png") {
-        image.src = "Back_Home_Again.png";
-        image.class = "spin";
-        audio.play();
-      } else {
-        image.src = "Assets/Unknown_Disc_1.png";
-        image.class = "glow";
-        audio.pause();
-      }
-    }
-  </script>
 </head>
    <body>
       <center>
@@ -30,16 +14,36 @@
          </div>
       </center>
       <script id="replace_with_navbar" src="nav.js"></script>
-      <center><img id="my-image" 
+      <center>
+               <img id="myImage" 
                    class="glow" 
                    height="200px" 
                    width="200px" 
                    src="Assets/Unknown_Disc_1.png" 
-                   onclick="onImageClick()" 
-                   ontouch="onImageClick()"/>
+                   onclick="swapImage()" 
+                   ontouch="swapImage()"/>
       <p>De vuelta a casa de nuevo (feat. Andy Warner)</p>
-      <audio id="my-audio" src="Assets/Audio/Back_Home_Again.mp3"/>
+      <audio id="myAudio" src="Assets/Audio/Back_Home_Again.mp3"/>
       </center>
+      <script>
+        var imageSwapped = false;
+        var audio = document.getElementById("myAudio");
+
+        function swapImage() {
+            var img = document.getElementById("myImage");
+            if (imageSwapped) {
+                img.src = "Assets/Unknown_Disc_1.png";
+                img.class = "glow";
+                audio.pause();
+                imageSwapped = false;
+            } else {
+                img.src = "Back_Home_Again.png";
+                img.class = "spin";
+                audio.play();
+                imageSwapped = true;
+            }
+        }
+      </script>
       <p>Latest New Content As Of: 11/18/2022</p>
    </body>
 <footer>
