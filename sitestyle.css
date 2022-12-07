@@ -15,6 +15,15 @@
 }
 
 
+.update {
+  background: rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .nakioku {
   color: white;
   text-align: center;
