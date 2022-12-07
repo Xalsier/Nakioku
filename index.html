@@ -15,36 +15,26 @@
       </center>
       <script id="replace_with_navbar" src="nav.js"></script>
       <script>
-      const imageContainer = document.getElementById('image-container');
-      const firstImage = document.getElementById('first-image');
-      const secondImage = document.getElementById('second-image');
-      const audio = document.getElementById('audio');
+const imageContainer = document.getElementById('image-container');
+const firstImage = document.getElementById('first-image');
+const secondImage = document.getElementById('second-image');
+const audio = document.getElementById('audio');
 
-      let isPlaying = false;
-
-audio.addEventListener('play', () => {
-  isPlaying = true;
-  imageContainer.classList.add('rotate');
-});
-
-audio.addEventListener('pause', () => {
-  isPlaying = false;
-  imageContainer.classList.remove('rotate');
-});
-
-audio.addEventListener('ended', () => {
-  isPlaying = false;
-  imageContainer.classList.remove('rotate');
-});
+let isPlaying = false;
 
 imageContainer.addEventListener('click', () => {
   if (isPlaying) {
     audio.pause();
+    firstImage.style.display = 'block';
+    secondImage.style.display = 'none';
+    isPlaying = false;
   } else {
     audio.play();
+    firstImage.style.display = 'none';
+    secondImage.style.display = 'block';
+    isPlaying = true;
   }
 });
-
       </script>
       <div id="image-container">
          <img id="first-image" src="Assets/Unknown_Disc_1.png" alt="First Image">
