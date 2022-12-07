@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-#first-image, .second-image {
+#first-image, #second-image {
   position: absolute;
   top: 0;
   left: 0;
