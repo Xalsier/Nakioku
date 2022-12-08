@@ -14,11 +14,9 @@
   height: 100%;
 }
 
-.discswap { 
+.disclarge { 
   height: 200px; 
   width: 200px;
-  onclick: swapImage(); 
-  ontouch: swapImage();
 }
 
 
