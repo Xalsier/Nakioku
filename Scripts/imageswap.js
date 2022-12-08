@@ -2,6 +2,7 @@ var audioElement = document.getElementById("myAudio");
 var audio = new Audio(audioElement.src);
 
 function swapImage() {
+    var imageSwapped = false;
     console.log("Swapping image...");
     var img = document.getElementById("myImage");
     img.style.transformOrigin = "center";
