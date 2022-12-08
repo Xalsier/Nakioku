@@ -1,10 +1,10 @@
 var audioElement = document.getElementById("myAudio");
+var imageSwapped = false;
 
 function swapImage() {
     console.log("Swapping image...");
     var img = document.getElementById("myImage");
     var audio = document.getElementById("myAudio");
-    var imageSwapped = false;
     img.style.transformOrigin = "center";
     img.style.transition = "transform 0.5s ease-in-out";
     if (imageSwapped) {
