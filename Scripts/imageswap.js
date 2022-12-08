@@ -1,16 +1,18 @@
 var audioElement = document.getElementById("myAudio");
-var audio = new Audio(audioElement.src);
 
 function swapImage() {
-    var imageSwapped = false;
     console.log("Swapping image...");
     var img = document.getElementById("myImage");
+    var audio = document.getElementById("myAudio");
+    var imageSwapped = false;
     img.style.transformOrigin = "center";
     img.style.transition = "transform 0.5s ease-in-out";
     if (imageSwapped) {
         img.style.transform = "";
         img.src = "Assets/Unknown_Disc_1.png";
+        console.log("Pausing audio...");
         audio.pause();
+        console.log("Audio paused");
         imageSwapped = false;
         stopSpin();
     } 
