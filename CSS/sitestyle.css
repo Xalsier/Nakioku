@@ -15,12 +15,12 @@
 }
 
 .discswap {
-  id="myImage"; 
-  height="200px"; 
-  width="200px"; 
-  src="../Assets/Unknown_Disc_1.png"; 
-  onclick="swapImage()"; 
-  ontouch="swapImage()";
+  id: myImage; 
+  height: 200px; 
+  width: 200px; 
+  src: url('../Assets/Unknown_Disc_1.png'); 
+  onclick: swapImage(); 
+  ontouch: swapImage();
 }
 
 
