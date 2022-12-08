@@ -3,23 +3,8 @@
          <ul>
                   <li><a href="Pages/gallery.html">Gallery</a></li>
                   <li><a href="Pages/music.html">Music</a></li>
-                  <li><a href="index.html">Home</a></li>
                   <li><a href="Pages/calendar.html">Calendar</a></li>
                   <li><a href="Pages/roadmap.html">Roadmap</a></li>
          </ul>
-         <script>
-             // Get the current URL
-            var currentURL = location.pathname;
-
-            // Get the list of navigation items
-            var navItems = document.querySelectorAll('nav ul li a');
-
-            // Loop through the items and add a class to the one that matches the current URL
-            navItems.forEach(function(navItem) {
-            if (navItem.getAttribute('href') === currentURL) {
-            navItem.classList.add('active');
-                }
-            })
-        </script>
     </nav>
 </div>
