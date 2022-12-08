@@ -11,7 +11,9 @@ function swapImage() {
     } 
     else {
         img.src = "Assets/Back_Home_Again.png";
+        console.log("Playing audio...");
         audio.play();
+        console.log("Audio played");
         imageSwapped = true;
         startSpin();
     }
