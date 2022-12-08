@@ -17,8 +17,7 @@
 .discswap {
   id: myImage; 
   height: 200px; 
-  width: 200px; 
-  src: url('../Assets/Unknown_Disc_1.png'); 
+  width: 200px;
   onclick: swapImage(); 
   ontouch: swapImage();
 }
