@@ -19,7 +19,7 @@ function swapImage() {
 
 function startSpin() {
     var img = document.getElementById("myImage");
-    img.style.animation = "spinning infinite 20s linear";
+    img.style.animation = "spinning infinite 6s linear";
 }
 
 function stopSpin() {
