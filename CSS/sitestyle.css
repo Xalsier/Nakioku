@@ -14,6 +14,15 @@
   height: 100%;
 }
 
+.discswap {
+  id="myImage" 
+  height="200px" 
+  width="200px" 
+  src="../Assets/Unknown_Disc_1.png" 
+  onclick="swapImage()" 
+  ontouch="swapImage()"
+}
+
 
 .update {
   background: rgba(0, 0, 0, 0.3);
