@@ -1,4 +1,7 @@
+var imageSwapped = false;
+
 function swapImage() {
+    var imageSwapped = false;
     console.log("Swapping image...");
     var audio = document.getElementById("myAudio");
     var img = document.getElementById("myImage");
