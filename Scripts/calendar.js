@@ -4,6 +4,22 @@ const date = new Date(2022, 11, 1);
 // create a table element to hold the calendar
 const calendarTable = document.createElement('table');
 
+// center the calendar
+calendarTable.style.margin = "0 auto";
+
+// give the calendar a white border
+calendarTable.style.border = "1px solid white";
+
+// set the background color of the calendar to white and make it opaque
+calendarTable.style.backgroundColor = "white";
+calendarTable.style.opacity = "0.9";
+
+// make the text inside the cells black
+calendarTable.style.color = "black";
+
+// make the calendar larger
+calendarTable.style.fontSize = "20px";
+
 // create a table row for the day names
 const dayNamesRow = document.createElement('tr');
 
@@ -29,18 +45,4 @@ while (date.getMonth() === 11) {
     const dayCell = document.createElement('td');
 
     // set the cell's inner text to the day of the month
-    dayCell.innerText = date.getDate();
-
-    // add the cell to the week row
-    weekRow.appendChild(dayCell);
-
-    // move to the next day
-    date.setDate(date.getDate() + 1);
-  }
-
-  // add the week row to the calendar table
-  calendarTable.appendChild(weekRow);
-}
-
-// add the calendar table to the document
-document.body.appendChild(calendarTable);
+    dayCell.innerText = date.
