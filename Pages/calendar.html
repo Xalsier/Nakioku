@@ -8,6 +8,30 @@
    <meta name="keywords" content="Nakioku, Xalsier, Calendar">
    <base href="https://www.nakioku.com"/>
    <link rel="stylesheet" href="CSS/sitestyle.css">
+   <style>
+      /* Add some style to the calendar */
+      .calendar {
+        font-family: Arial;
+        font-size: 12px;
+        color: white;
+        background-color: white;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid #ccc;
+        padding: 4px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .current-month {
+        background-color: white;
+      }
+      .other-month {
+        color: white;
+      }
+    </style>
 </head>
    <body>
       <center>
@@ -16,7 +40,70 @@
          </div>
       </center>
       <script id="replace_with_navbar" src="nav.js"></script>
-      <script src="Scripts/calendar.js"></script>
+       <!-- Add the calendar to the page -->
+    <div class="calendar">
+      <center>
+      <table>
+        <tr>
+          <td colspan="7" class="current-month">January 2023</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td>M</td>
+          <td>T</td>
+          <td>W</td>
+          <td>T</td>
+          <td>F</td>
+          <td>S</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td></td>
+        </tr>
+      </table>
+      </center>
+    </div>
    </body>
 <footer>
    <script src="Scripts/footer.js"></script>
